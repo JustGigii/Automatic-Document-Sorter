@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="menu" maxHeight="130.0" maxWidth="276.0" minHeight="130.0" minWidth="276.0" prefHeight="130.0" prefWidth="276.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LayoutComponents.MenuController">
+	<children>
+		<VBox maxHeight="130.0" maxWidth="276.0" minHeight="130.0" minWidth="276.0" prefHeight="130.0" prefWidth="276.0" spacing="5.0">
+			<children>
+				<Pane fx:id="settings_pane" maxHeight="40.0" maxWidth="266.0" minHeight="40.0" minWidth="266.0" onMouseClicked="#openSettings" onMouseEntered="#enteredSettings" onMouseExited="#exitedSettings" prefHeight="40.0" prefWidth="266.0" style="-fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-background-color: rgba(2, 5, 14, 0.7);">
+					<children>
+						<Text fx:id="settings_text" fill="WHITE" layoutX="50.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" wrappingWidth="182.13671875">
+							<font>
+								<Font name="Arial Bold" size="14.0" />
+							</font>
+						</Text>
+						<Pane fx:id="settings_icon" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+                 		</children>
+					<VBox.margin>
+						<Insets left="10.0" />
+					</VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+				</Pane>
+				<Pane fx:id="manual_sorting_pane" maxHeight="40.0" maxWidth="266.0" minHeight="40.0" minWidth="266.0" onMouseClicked="#openManualSorting" onMouseEntered="#enteredManualSorting" onMouseExited="#exitedManualSorting" prefHeight="40.0" prefWidth="266.0" style="-fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-background-color: rgba(2, 5, 14, 0.7);">
+					<children>
+						<Text fx:id="manual_sorting_text" fill="WHITE" layoutX="50.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manual Sorting" wrappingWidth="182.13671875">
+							<font>
+								<Font name="Arial Bold" size="14.0" />
+							</font>
+						</Text>
+						<Pane fx:id="manual_sorting_icon" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+					</children>
+					<VBox.margin>
+						<Insets left="10.0" />
+					</VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+				</Pane>
+				<Pane fx:id="notifications_pane" maxHeight="40.0" maxWidth="266.0" minHeight="40.0" minWidth="266.0" onMouseClicked="#openNotifications" onMouseEntered="#enteredNotifications" onMouseExited="#exitedNotifications" prefHeight="40.0" prefWidth="266.0" style="-fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-background-color: rgba(2, 5, 14, 0.7);">
+					<children>
+						<Text fx:id="notifications_text" fill="WHITE" layoutX="50.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications" wrappingWidth="182.13671875">
+							<font>
+								<Font name="Arial Bold" size="14.0" />
+							</font>
+						</Text>
+						<Pane fx:id="notifications_icon" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+                  <Pane fx:id="notifications_glow" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" />
+                  <Pane fx:id="notifications_ball" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: yellow;" />
+					</children>
+					<VBox.margin>
+						<Insets left="10.0" />
+					</VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+				</Pane>
+			</children>
+		</VBox>
+	</children>
+</Pane>

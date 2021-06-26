@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="24.0" maxWidth="503.0" minHeight="24.0" minWidth="503.0" onMouseClicked="#select" prefHeight="24.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.ScreensComponents.RedirectCellController">
+   <children>
+      <HBox maxHeight="24.0" maxWidth="503.0" minHeight="24.0" minWidth="503.0" prefHeight="24.0" prefWidth="503.0" spacing="3.0">
+         <children>
+            <Pane fx:id="owner_1_pane" prefHeight="24.0" prefWidth="250.0" style="-fx-border-color: #535762; -fx-border-width: 3; -fx-border-radius: 10 0 0 10;">
+               <children>
+                  <Text fx:id="owner_1_text" fill="#535762" layoutX="13.0" layoutY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="owner_1" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="234.13671875">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="owner_2_pane" prefHeight="24.0" prefWidth="250.0" style="-fx-border-color: #535762; -fx-border-width: 3; -fx-border-radius: 0 10 10 0;">
+               <children>
+                  <Text fx:id="owner_2_text" fill="#535762" layoutX="3.0" layoutY="4.0" strokeType="OUTSIDE" strokeWidth="0.0" text="owner_2" textAlignment="CENTER" textOrigin="TOP" wrappingWidth="234.13671875">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+                    
+</Pane>

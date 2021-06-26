@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="cell" maxHeight="100.0" minWidth="754.0" prefHeight="100.0" prefWidth="754.0" style="-fx-background-color: linear-gradient(to right, rgba(0, 0, 0,0), rgba(0, 0, 0, 0.8)); -fx-background-radius: 10 10 10 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.ScreensComponents.NotificationsCellController">
+	<children>
+		<Pane fx:id="icon" layoutX="14.0" layoutY="18.0" maxHeight="64.0" maxWidth="64.0" minHeight="64.0" minWidth="64.0" prefHeight="64.0" prefWidth="64.0" style="-fx-background-color: white;" />
+		<Text fx:id="title" fill="#4271f4" layoutX="81.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notification" textAlignment="CENTER" wrappingWidth="659.13671875">
+			<font>
+				<Font name="Arial Bold" size="25.0" />
+			</font>
+		</Text>
+		<Text fx:id="text" fill="rgba(83,87,98,1)" layoutX="81.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text Text Text  Text Text  Text Text  Text Text  Text Text  Text Text  Text Text  Text Text  Text Text  Text Text  Text Text " wrappingWidth="633.13671875">
+			<font>
+				<Font name="Arial Bold" size="14.0" />
+			</font>
+		</Text>
+	</children>
+</Pane>

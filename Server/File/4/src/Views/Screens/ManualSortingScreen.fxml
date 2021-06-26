@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="776.0" minWidth="790.0" prefHeight="776.0" prefWidth="790.0" style="-fx-background-radius: 10 0 10 0; -fx-border-radius: 10 0 10 0; -fx-background-color: transparent;" BorderPane.alignment="BOTTOM_RIGHT" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.ManualSortingScreenController">
+	<children>
+		<Text fx:id="screen_title" fill="WHITE" layoutX="18.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manual Sorting" wrappingWidth="252.13671875">
+			<font>
+				<Font name="Arial Bold" size="25.0" />
+			</font>
+		</Text>
+		<Text fx:id="static_label_0" fill="#535762" layoutX="18.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PDFs from:" wrappingWidth="78.13671875">
+			<font>
+				<Font name="Arial Bold" size="14.0" />
+			</font>
+		</Text>
+		<Pane fx:id="pdf_pane" layoutX="20.0" layoutY="71.0" maxHeight="594.0" maxWidth="420.0" minHeight="594.0" minWidth="420.0" onMouseClicked="#pdfReset" onMouseDragged="#pdfDragged" onMousePressed="#pdfPressed" onScroll="#pdfZoomed" prefHeight="594.0" prefWidth="420.0" style="-fx-background-color: transparent;">
+			<cursor>
+				<Cursor fx:constant="OPEN_HAND" />
+			</cursor>
+		</Pane>
+		<Pane fx:id="move_button" layoutX="20.0" layoutY="718.0" onMouseClicked="#moveFiles" prefHeight="38.0" prefWidth="164.0" style="-fx-background-color: #4271f4; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+			<children>
+				<Pane fx:id="move_button_icon" layoutX="7.0" layoutY="7.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+				<Text fx:id="move_button_text" fill="WHITE" layoutX="36.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move" wrappingWidth="182.13671875">
+					<font>
+						<Font name="Arial Bold" size="14.0" />
+					</font>
+				</Text>
+			</children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+		</Pane>
+		<ScrollPane fx:id="scroll_pane" hbarPolicy="NEVER" layoutX="460.0" layoutY="68.0" pannable="true" prefHeight="670.0" prefWidth="310.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
+			<content>
+				<GridPane fx:id="grid" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="310.0" style="-fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;" vgap="33.0">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints maxHeight="138.0" minHeight="138.0" percentHeight="0.0" prefHeight="30138.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+				</GridPane>
+			</content>
+		</ScrollPane>
+		<Text fx:id="static_label_1" fill="#535762" layoutX="35.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To move hover and hold" wrappingWidth="222.13671875">
+			<font>
+				<Font name="Arial Bold" size="14.0" />
+			</font>
+		</Text>
+		<Text fx:id="static_label_2" fill="#535762" layoutX="35.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To zome hover and roll" wrappingWidth="222.13671875">
+			<font>
+				<Font name="Arial Bold" size="14.0" />
+			</font>
+		</Text>
+		<Pane fx:id="static_icon_2_0" layoutX="20.0" layoutY="683.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="static_icon_1_0" layoutX="20.0" layoutY="668.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="static_icon_1_1_a" layoutX="200.0" layoutY="668.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="static_icon_2_1_a" layoutX="200.0" layoutY="683.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+			<Pane fx:id="static_icon_1_1_b" layoutX="200.0" layoutY="668.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="static_icon_2_1_b" layoutX="200.0" layoutY="683.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="url_pane" layoutX="99.0" layoutY="46.0" maxHeight="16.0" maxWidth="146.0" minHeight="16.0" minWidth="146.0" prefHeight="16.0" prefWidth="146.0" />
+			
+
+		<Pane fx:id="delete_button" layoutX="204.0" layoutY="718.0" onMouseClicked="#deleteFiles" prefHeight="38.0" prefWidth="164.0" style="-fx-background-color: #4271f4; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+			<children>
+				<Pane fx:id="delete_button_icon" layoutX="7.0" layoutY="7.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+				<Text fx:id="delete_button_text" fill="WHITE" layoutX="36.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete" wrappingWidth="182.13671875">
+					<font>
+						<Font name="Arial Bold" size="14.0" />
+					</font>
+				</Text>
+			</children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+		</Pane>
+		<Pane fx:id="static_icon_3_0" layoutX="460.0" layoutY="741.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="static_icon_3_1_a" layoutX="632.0" layoutY="741.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="static_icon_3_1_b" layoutX="632.0" layoutY="741.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+		<Text fx:id="static_label_3" fill="#535762" layoutX="475.0" layoutY="753.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To move hover and roll" wrappingWidth="222.13671875">
+			<font>
+				<Font name="Arial Bold" size="14.0" />
+			</font>
+		</Text>
+		<Pane fx:id="redirect_button" layoutX="252.0" layoutY="47.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #4271f4;">
+		<cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Pane>
+		<Pane fx:id="reload_button" layoutX="267.0" layoutY="47.0" onMouseClicked="#reStartFolder" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #4271f4;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Pane>
+         <Pane fx:id="switch_button" layoutX="282.0" layoutY="47.0" onMouseClicked="#switchCurrentFolder" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #4271f4;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+		<Text fx:id="error_message" fill="RED" layoutX="302.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Folder is empty " wrappingWidth="164.0">
+			<font>
+				<Font name="Arial" size="14.0" />
+			</font>
+		</Text>
+      <Pane fx:id="static_icon_4_0" layoutX="248.0" layoutY="668.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+      <Pane fx:id="static_icon_4_1_a" layoutX="428.0" layoutY="668.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+      <Pane fx:id="static_icon_4_1_b" layoutX="428.0" layoutY="668.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+      <Text fx:id="static_label_4" fill="#535762" layoutX="263.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To reset hover and click" wrappingWidth="222.13671875">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+	</children>
+</Pane>

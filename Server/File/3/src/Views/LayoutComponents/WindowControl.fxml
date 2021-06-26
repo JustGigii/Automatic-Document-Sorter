@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="40.0" maxWidth="132.0"
+	minHeight="40.0" minWidth="132.0" prefHeight="40.0" prefWidth="132.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Controllers.LayoutComponents.WindowControlController">
+	<children>
+		<HBox maxHeight="40.0" maxWidth="132.0" minHeight="40.0"
+			minWidth="132.0" prefHeight="40.0" prefWidth="132.0" spacing="10.0"
+			style="-fx-background-color: transparent; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+			<children>
+				<Pane fx:id="m_icon" maxHeight="24.0" maxWidth="24.0"
+					minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0"
+					style="-fx-background-color: blue;">
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Pane>
+				<Pane fx:id="w_icon" maxHeight="24.0" maxWidth="24.0"
+					minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0"
+					style="-fx-background-color: blue;">
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Pane>
+				<Pane maxHeight="24.0" maxWidth="24.0" minHeight="24.0"
+					minWidth="24.0" prefHeight="24.0" prefWidth="24.0">
+					<children>
+						<Pane fx:id="x_glow" maxHeight="24.0" maxWidth="24.0"
+							minHeight="24.0" minWidth="24.0" onMouseClicked="#exit"
+							prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: transparent;" />
+						<Pane fx:id="x_icon" maxHeight="24.0" maxWidth="24.0"
+							minHeight="24.0" minWidth="24.0" onMouseEntered="#enteredExit" onMouseExited="#exitedExit" onMouseClicked="#exit" 
+							prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: blue;">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+							<effect>
+								<Glow />
+							</effect>
+						</Pane>
+					</children>
+				</Pane>
+			</children>
+			<padding>
+				<Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+			</padding>
+		</HBox>
+	</children>
+</Pane>

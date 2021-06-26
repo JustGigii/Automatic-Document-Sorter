@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+      <Pane fx:id="removed_pane" layoutX="398.0" layoutY="195.0" maxHeight="24.0" maxWidth="140.0" minHeight="24.0" minWidth="140.0" prefHeight="24.0" prefWidth="140.0" style="-fx-border-color: #4271f4; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.ScreensComponents.PrimaryTabController">>
+         <children>
+           
+            <Pane fx:id="checkbox_inside" layoutX="128.0" maxHeight="18.0" maxWidth="18.0" minHeight="18.0" minWidth="18.0" prefHeight="18.0" prefWidth="18.0" style="-fx-background-color: white" />
+			<Pane fx:id="checkbox" layoutX="128.0" maxHeight="18.0" maxWidth="18.0" minHeight="18.0" minWidth="18.0" onMouseClicked="#remove" prefHeight="18.0" prefWidth="18.0" style="-fx-background-color: red;">
+        
+            <Text fx:id="static_label_3113511" fill="#535762" layoutX="3.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="נועה" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="133.88671875">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="layout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="816.0" minWidth="1066.0" prefHeight="816.0" prefWidth="1066.0" style="-fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LayoutController">
+	<children>
+		<ImageView fx:id="background" fitHeight="816.0" fitWidth="1066.0" pickOnBounds="true" preserveRatio="true" />
+		<BorderPane minHeight="816.0" minWidth="1066.0" prefHeight="816.0" prefWidth="1066.0" style="-fx-background-color: rgba(2, 5, 14, 0.87);">
+			<center>
+				<Pane fx:id="main_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="776.0" minWidth="790.0" prefHeight="776.0" prefWidth="790.0" style="-fx-background-radius: 10 0 10 0; -fx-border-radius: 10 0 10 0; -fx-background-color: rgba(2, 5, 14, 0.7);" BorderPane.alignment="BOTTOM_RIGHT">
+					<BorderPane.margin>
+						<Insets left="276.0" top="40.0" />
+					</BorderPane.margin>
+				</Pane>
+			</center>
+			<top>
+				<BorderPane maxHeight="40.0" maxWidth="-Infinity" minHeight="40.0" minWidth="790.0" prefHeight="40.0" prefWidth="790.0" style="-fx-background-radius: 0 10 0 0; -fx-border-radius: 0 10 0 0; -fx-background-color:  linear-gradient(to right, rgba(2, 5, 14,0), rgba(2, 5, 14, 0.7));" BorderPane.alignment="TOP_RIGHT">
+					<BorderPane.margin>
+						<Insets left="276.0" />
+					</BorderPane.margin>
+					<right>
+						<HBox maxHeight="40.0" maxWidth="132.0" minHeight="40.0" minWidth="132.0" prefHeight="40.0" prefWidth="132.0" spacing="10.0" style="-fx-background-color: transparent; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;" BorderPane.alignment="CENTER">
+							<children>
+								<Pane fx:id="m_icon" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+								<Pane fx:id="w_icon" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+								<Pane maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" fx:id="x_icon" />
+							</children>
+							<padding>
+								<Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+							</padding>
+						</HBox>
+					</right>
+               <left>
+                  <Pane maxHeight="40.0" maxWidth="498.0" minHeight="40.0" minWidth="498.0" prefHeight="40.0" prefWidth="498.0" BorderPane.alignment="BOTTOM_LEFT">
+                     <children>
+                        <Text boundsType="VISUAL" fill="WHITE" layoutX="20.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C:\Users\user\Desktop\my icons\i77777777777777777777777777ggggco__________________________________________________________________________________" textOrigin="TOP">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" />
+                     </padding>
+                  </Pane>
+               </left>
+				</BorderPane>
+			</top>
+			<rotationAxis>
+				<Point3D />
+			</rotationAxis>
+			<left>
+				<BorderPane maxHeight="-Infinity" maxWidth="276.0" minHeight="696.0" minWidth="276.0" prefHeight="696.0" prefWidth="256.0" style="-fx-background-radius: 0 0 0 10; -fx-border-radius: 0 0 0 10; -fx-background-color: linear-gradient(to bottom, rgba(2, 5, 14,0), rgba(2, 5, 14, 0.7));" BorderPane.alignment="BOTTOM_LEFT">
+					<BorderPane.margin>
+						<Insets top="120.0" />
+					</BorderPane.margin>
+					<bottom>
+						<Pane maxHeight="80.0" maxWidth="276.0" minHeight="80.0" minWidth="276.0" prefHeight="80.0" prefWidth="276.0" style="-fx-background-radius: 0 0 0 10; -fx-border-radius: 0 0 0 10; -fx-background-color:transparent;" BorderPane.alignment="BOTTOM_CENTER">
+							<children>
+								<Text fill="WHITE" layoutX="52.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="126.13671875">
+									<font>
+										<Font name="Arial Bold" size="18.0" />
+									</font>
+								</Text>
+                        <Pane fx:id="p_icon" layoutX="14.0" layoutY="34.0" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: white;" />
+                        <Pane fx:id="bar_1" layoutX="52.0" layoutY="60.0" maxHeight="3.0" maxWidth="40.0" minHeight="3.0" minWidth="40.0" prefHeight="3.0" prefWidth="47.0" style="-fx-background-color: white;" />
+                        <Pane fx:id="bar_2" layoutX="95.0" layoutY="60.0" maxHeight="3.0" maxWidth="40.0" minHeight="3.0" minWidth="40.0" prefHeight="3.0" prefWidth="47.0" style="-fx-background-color: white;" />
+                        <Pane fx:id="bar_3" layoutX="138.0" layoutY="60.0" maxHeight="3.0" maxWidth="40.0" minHeight="3.0" minWidth="40.0" prefHeight="3.0" prefWidth="47.0" style="-fx-background-color: white;" />
+                        <Text fill="WHITE" layoutX="185.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000/1000" wrappingWidth="70.13671875">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Text>
+							</children>
+						</Pane>
+					</bottom>
+					<top>
+						<VBox maxHeight="130.0" maxWidth="276.0" minHeight="130.0" minWidth="276.0" prefHeight="130.0" prefWidth="276.0" spacing="5.0" BorderPane.alignment="CENTER">
+							<children>
+								<Pane maxHeight="40.0" maxWidth="266.0" minHeight="40.0" minWidth="266.0" prefHeight="40.0" prefWidth="266.0" style="-fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-background-color: rgba(2, 5, 14, 0.7);">
+									<children>
+										<Text fill="WHITE" layoutX="50.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" wrappingWidth="182.13671875">
+											<font>
+												<Font name="Arial" size="14.0" />
+											</font>
+										</Text>
+										<Pane fx:id="settings_icon" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+									</children>
+									<VBox.margin>
+										<Insets left="10.0" />
+									</VBox.margin>
+								</Pane>
+								<Pane maxHeight="40.0" maxWidth="266.0" minHeight="40.0" minWidth="266.0" prefHeight="40.0" prefWidth="266.0" style="-fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-background-color: transparent;">
+									<children>
+										<Text fill="WHITE" layoutX="50.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View and Edit" wrappingWidth="182.13671875">
+											<font>
+												<Font name="Arial" size="14.0" />
+											</font>
+										</Text>
+										<Pane fx:id="view_and_edit_icon" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+									</children>
+									<VBox.margin>
+										<Insets left="10.0" />
+									</VBox.margin>
+								</Pane>
+								<Pane maxHeight="40.0" maxWidth="266.0" minHeight="40.0" minWidth="266.0" prefHeight="40.0" prefWidth="266.0" style="-fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-background-color: transparent;">
+									<children>
+										<Text fill="WHITE" layoutX="50.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications" wrappingWidth="182.13671875">
+											<font>
+												<Font name="Arial" size="14.0" />
+											</font>
+										</Text>
+										<Pane fx:id="notifications_icon" layoutX="20.0" layoutY="8.0" maxHeight="24.0" maxWidth="24.0" minHeight="24.0" minWidth="24.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: white;" />
+									</children>
+									<VBox.margin>
+										<Insets left="10.0" />
+									</VBox.margin>
+								</Pane>
+							</children>
+							<BorderPane.margin>
+								<Insets />
+							</BorderPane.margin>
+						</VBox>
+					</top>
+				</BorderPane>
+			</left>
+		</BorderPane>
+		<Pane maxHeight="120.0" maxWidth="276.0" minHeight="120.0" minWidth="276.0" prefHeight="120.0" prefWidth="276.0" style="-fx-background-radius: 10 0 0 0; -fx-border-radius: 10 0 0 0; -fx-background-color: transparent;">
+			<children>
+				<Text fx:id="logo_text" fill="WHITE" layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document Sorter" wrappingWidth="252.13671875">
+					<font>
+						<Font name="Arial Bold" size="30.0" />
+					</font>
+				</Text>
+			</children>
+		</Pane>
+	</children>
+</Pane>

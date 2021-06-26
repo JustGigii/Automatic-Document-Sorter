@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="pdf_preview" maxHeight="135.0" maxWidth="70.0" minHeight="135.0" minWidth="70.0" prefHeight="135.0" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.ScreensComponents.PDFPreviewController">
+	<children>
+		<BorderPane fx:id="layout" maxHeight="99.0" maxWidth="70.0" minHeight="99.0" minWidth="70.0" onMouseClicked="#open" prefHeight="99.0" prefWidth="70.0" />
+		<Pane fx:id="name_label" layoutY="99.0" maxHeight="36.0" maxWidth="70.0" minHeight="36.0" minWidth="70.0" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: #535762;" />
+		<Pane fx:id="checkbox_inside" layoutX="52.0" maxHeight="18.0" maxWidth="18.0" minHeight="18.0" minWidth="18.0" prefHeight="18.0" prefWidth="18.0" style="-fx-background-color: white" />
+		<Pane fx:id="checkbox" layoutX="52.0" maxHeight="18.0" maxWidth="18.0" minHeight="18.0" minWidth="18.0" onMouseClicked="#select" prefHeight="18.0" prefWidth="18.0" style="-fx-background-color: blue;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Pane>
+	</children>
+	<cursor>
+		<Cursor fx:constant="OPEN_HAND" />
+	</cursor>
+</Pane>

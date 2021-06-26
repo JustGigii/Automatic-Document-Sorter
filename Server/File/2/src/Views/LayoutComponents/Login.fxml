@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="layout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="816.0" minWidth="1066.0" prefHeight="816.0" prefWidth="1066.0" style="-fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LayoutComponents.LoginController">
+	<children>
+		<ImageView fx:id="background" fitHeight="816.0" fitWidth="1066.0" pickOnBounds="true" preserveRatio="true" />
+		<BorderPane fx:id="background_pane" minHeight="816.0" minWidth="1066.0" onMouseDragged="#windowDragged" onMousePressed="#windowPressed" prefHeight="816.0" prefWidth="1066.0" style="-fx-background-color: rgba(0, 0, 0, 0.87);">
+			<rotationAxis>
+				<Point3D />
+			</rotationAxis>
+         <center>
+            <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="192.0" minWidth="401.0" prefHeight="258.0" prefWidth="559.0" style="-fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="button" layoutX="267.0" layoutY="145.0" onMouseClicked="#login" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                  <Text fill="WHITE" layoutX="239.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textOrigin="TOP" wrappingWidth="80.13671875">
+                     <font>
+                        <Font name="Arial Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="password_field" layoutX="209.0" layoutY="103.0" maxHeight="24.0" maxWidth="140.0" minHeight="24.0" minWidth="140.0" prefHeight="24.0" prefWidth="140.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #4271f4; -fx-border-width: 3; -fx-text-fill: white; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+                     <font>
+                        <Font name="Arial Bold" size="10.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="username_field" layoutX="210.0" layoutY="66.0" maxHeight="24.0" maxWidth="140.0" minHeight="24.0" minWidth="140.0" prefHeight="24.0" prefWidth="140.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-color: #4271f4; -fx-border-width: 3; -fx-text-fill: white; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+                     <font>
+                        <Font name="Arial Bold" size="10.0" />
+                     </font>
+                  </TextField>
+                  <Text fx:id="error_text" fill="RED" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="jhjhjhjjhjhjjjhjh" textAlignment="CENTER" wrappingWidth="559.13671875">
+                     <font>
+                        <Font name="Arial Bold" size="11.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </center>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+		</BorderPane>
+	</children>
+</Pane>

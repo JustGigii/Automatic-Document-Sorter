@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="776.0" minWidth="790.0" prefHeight="776.0" prefWidth="790.0" style="-fx-background-radius: 10 0 10 0; -fx-border-radius: 10 0 10 0;" BorderPane.alignment="BOTTOM_RIGHT" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.NotificationsScreenController">
+   <children>
+      <Text fill="WHITE" layoutX="18.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notifications" wrappingWidth="252.13671875">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Text>
+      <ScrollPane hbarPolicy="NEVER" layoutX="18.0" layoutY="48.0" maxHeight="728.0" maxWidth="756.0" minHeight="728.0" minWidth="756.0" pannable="true" prefHeight="728.0" prefWidth="756.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
+         <content>
+            <VBox fx:id="vbox" spacing="9.0">
+               <children>
+                
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

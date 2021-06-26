@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="189.0" maxWidth="754.0" minHeight="189.0" minWidth="754.0" prefHeight="189.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.ScreensComponents.NetworkingTabController">
+	 <children>
+                              <Pane fx:id="reopen_server_icon" layoutX="695.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Text fx:id="static_label_1" fill="#535762" layoutX="60.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interface" wrappingWidth="102.13671875">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Pane fx:id="interface_icon" layoutX="33.0" layoutY="93.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="user_photo" layoutX="32.0" prefHeight="51.0" prefWidth="51.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="user_name" layoutX="86.0" prefHeight="24.0" prefWidth="140.0">
+         <children>
+            <Text fx:id="static_label_11" fill="#4271f4" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User123" wrappingWidth="102.13671875">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+         </children></Pane>
+                              <Pane fx:id="logout_icon" layoutX="86.0" layoutY="27.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="service_icon" layoutX="203.0" layoutY="93.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="line3" layoutX="203.0" layoutY="120.0" prefHeight="42.0" prefWidth="3.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="database_icon" layoutX="373.0" layoutY="93.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="ai_icon" layoutX="203.0" layoutY="165.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="line1" layoutX="60.0" layoutY="111.0" prefHeight="3.0" prefWidth="140.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="line2" layoutX="230.0" layoutY="111.0" prefHeight="3.0" prefWidth="140.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="log" layoutX="230.0" layoutY="119.0" maxWidth="659.0" minWidth="443.0" prefHeight="70.0" prefWidth="489.0" style="-fx-background-color: #4271f4;" />
+                              <Pane fx:id="reload_icon" layoutX="668.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Text fx:id="static_label_2" fill="#535762" layoutX="230.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service" wrappingWidth="102.13671875">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="static_label_3" fill="#535762" layoutX="400.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database" wrappingWidth="102.13671875">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="static_label_4" fill="#535762" layoutX="212.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AI" wrappingWidth="102.13671875">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+</Pane>

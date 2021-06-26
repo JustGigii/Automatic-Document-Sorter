@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>data (30).jpeg</filename>
+	<path>C:\Users\omrig\Desktop\SortFile\TrainPic\models\research\object_detection\images\train\data (30).jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>0</width>
+		<height>0</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>names</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>502</xmin>
+			<ymin>1160</ymin>
+			<xmax>933</xmax>
+			<ymax>1358</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="296.0" maxWidth="754.0" minHeight="55.0" minWidth="188.0" prefHeight="58.0" prefWidth="188.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Screens.ScreensComponents.PrimaryTabController">
+	 <children>
+                              <Pane fx:id="redirect_button" layoutX="146.0" layoutY="30.0" prefHeight="24.0" prefWidth="24.0" style="-fx-background-color: #4271f4;" />
+                              <Text fx:id="static_label_31" fill="#535762" layoutX="146.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LogIn" wrappingWidth="112.13671875">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Text>
+      <TextField layoutX="3.0" layoutY="3.0" maxHeight="24.0" maxWidth="140.0" minHeight="24.0" minWidth="140.0" prefHeight="24.0" prefWidth="140.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-color: #4271f4; -fx-border-width: 3; -fx-text-fill: white; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+         <font>
+            <Font name="Arial Bold" size="10.0" />
+         </font></TextField>
+      <TextField layoutX="3.0" layoutY="30.0" maxHeight="24.0" maxWidth="140.0" minHeight="24.0" minWidth="140.0" prefHeight="24.0" prefWidth="140.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #4271f4; -fx-border-width: 3; -fx-text-fill: white; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;">
+         <font>
+            <Font name="Arial Bold" size="10.0" />
+         </font>
+      </TextField>
+                           </children>
+                    
+</Pane>

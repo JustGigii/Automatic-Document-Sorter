@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="layout" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="816.0" minWidth="1066.0" prefHeight="816.0" prefWidth="1066.0"
+	style="-fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="Controllers.LayoutComponents.LayoutController">
+	<children>
+		<ImageView fx:id="background" fitHeight="816.0" fitWidth="1066.0"
+			pickOnBounds="true" preserveRatio="true" />
+		<BorderPane fx:id="background_pane" minHeight="816.0"
+			minWidth="1066.0" prefHeight="816.0" prefWidth="1066.0"
+			style="-fx-background-color: rgba(0, 0, 0, 0.87);">
+			<center>
+				<Pane fx:id="main_pane" maxHeight="-Infinity" maxWidth="-Infinity"
+					minHeight="776.0" minWidth="790.0" prefHeight="776.0" prefWidth="790.0"
+					style="-fx-background-radius: 10 0 10 0; -fx-border-radius: 10 0 10 0; -fx-background-color: rgba(0, 0, 0, 0.7);"
+					BorderPane.alignment="BOTTOM_RIGHT">
+					<BorderPane.margin>
+						<Insets left="276.0" top="40.0" />
+					</BorderPane.margin>
+				</Pane>
+			</center>
+			<top>
+				<BorderPane fx:id="top_pane" maxHeight="40.0" maxWidth="-Infinity"
+					minHeight="40.0" minWidth="790.0" onMouseDragged="#windowDragged"
+					onMousePressed="#windowPressed" onMouseReleased="#windowReleased"
+					prefHeight="40.0" prefWidth="790.0"
+					style="-fx-background-radius: 0 10 0 0; -fx-border-radius: 0 10 0 0; -fx-background-color: linear-gradient(to right, rgba(0, 0, 0,0), rgba(0, 0, 0, 0.7));"
+					BorderPane.alignment="TOP_RIGHT">
+					<BorderPane.margin>
+						<Insets left="276.0" />
+					</BorderPane.margin>
+					<right>
+					</right>
+					<left>
+						<Pane fx:id="url_pane" maxHeight="40.0" maxWidth="498.0" minHeight="40.0"
+							minWidth="498.0" prefHeight="40.0" prefWidth="498.0"
+							BorderPane.alignment="BOTTOM_LEFT">
+							<padding>
+								<Insets bottom="8.0" left="8.0" />
+							</padding>
+						</Pane>
+					</left>
+					<cursor>
+						<Cursor fx:constant="MOVE" />
+					</cursor>
+				</BorderPane>
+			</top>
+			<rotationAxis>
+				<Point3D />
+			</rotationAxis>
+			<left>
+				<BorderPane fx:id="left_pane" maxHeight="-Infinity"
+					maxWidth="276.0" minHeight="696.0" minWidth="276.0" onMouseDragged="#windowDragged"
+					onMousePressed="#windowPressed" onMouseReleased="#windowReleased"
+					prefHeight="696.0" prefWidth="256.0"
+					style="-fx-background-radius: 0 0 0 10; -fx-border-radius: 0 0 0 10; -fx-background-color: linear-gradient(to bottom, rgba(0, 0, 0,0), rgba(0, 0, 0, 0.7));"
+					BorderPane.alignment="BOTTOM_LEFT">
+					<BorderPane.margin>
+						<Insets top="120.0" />
+					</BorderPane.margin>
+					<bottom>
+					</bottom>
+					<top>
+					</top>
+					<cursor>
+						<Cursor fx:constant="MOVE" />
+					</cursor>
+				</BorderPane>
+			</left>
+		</BorderPane>
+		<Pane fx:id="logo_pane" maxHeight="120.0" maxWidth="276.0"
+			minHeight="120.0" minWidth="276.0" onMouseDragged="#windowDragged"
+			onMousePressed="#windowPressed" onMouseReleased="#windowReleased"
+			prefHeight="120.0" prefWidth="276.0"
+			style="-fx-background-radius: 10 0 0 0; -fx-border-radius: 10 0 0 0; -fx-background-color: transparent;">
+			<children>
+				<Text fx:id="logo_text" fill="WHITE" layoutX="14.0" layoutY="52.0"
+					strokeType="OUTSIDE" strokeWidth="0.0" text="Document Sorter"
+					wrappingWidth="252.13671875">
+					<font>
+						<Font name="Arial Bold" size="30.0" />
+					</font>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</Text>
+			</children>
+			<cursor>
+				<Cursor fx:constant="MOVE" />
+			</cursor>
+		</Pane>
+	</children>
+</Pane>
