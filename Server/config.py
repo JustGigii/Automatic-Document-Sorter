@@ -1,7 +1,7 @@
 POPPLER = r'poppler-0.67.0\bin'
 IMAGETYPE = 'jpeg'
 WORKSPACE = 'File'
-PYTESSERACT = r'C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract'
+PYTESSERACT = r'C:\Program Files\Tesseract-OCR\tesseract'
 PYTESSERACT_LANGUAGE ='heb'
 SYSTEMLANGUAGE = 'he'
 ERRORLABEL = "לבדיקה"

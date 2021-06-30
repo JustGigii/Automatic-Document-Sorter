@@ -496,9 +496,11 @@ public class Model {
 							service_connector.sendCommand();
 
 							if (service_connector.getUsername() == null || service_connector.getPassword() == null) {
-								((LayoutController) layout_components_controllers.get(LayoutComponents.Layout)).setNoURL();
-								((LayoutController) layout_components_controllers.get(LayoutComponents.Layout))
-										.openLoginScreen();
+//								((LayoutController) layout_components_controllers.get(LayoutComponents.Layout)).setNoURL();
+//								((LayoutController) layout_components_controllers.get(LayoutComponents.Layout))
+//										.openLoginScreen();
+								service_connector.setUsername("lev");
+								service_connector.setPassword("qaz1");
 								Platform.runLater(new Runnable() {
 									@Override
 									public void run() {

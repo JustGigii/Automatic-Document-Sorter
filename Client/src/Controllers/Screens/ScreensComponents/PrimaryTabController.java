@@ -50,23 +50,8 @@ public class PrimaryTabController extends Controller {
 	private TextField redirect_text_field;
 	
 	
-	@FXML
-	private Pane static_icon_1_1_a;
-	@FXML
-	private Pane static_icon_1_1_b;
-	@FXML
-	private Pane static_icon_1_0;
-	@FXML
-	private Text static_label_1;
-	
-	
 	@Override
 	public void init() {
-		
-		this.initIcon(static_icon_1_0, "manual_sorting_screen", "viewer_move", 12, 12, ThemeManager.neutralSecondary());
-		this.initIcon(static_icon_1_1_a, "manual_sorting_screen", "mouse", 12, 12, ThemeManager.neutralSecondary());
-		this.initIcon(static_icon_1_1_b, "manual_sorting_screen", "mouse_left", 12, 12, ThemeManager.neutralMainly());
-		
 		this.initIcon(from_folder_button, "settings", "from_folder", 24, 24, ThemeManager.currentMainly());
 		this.initIcon(to_folder_button, "settings", "to_folder", 24, 24, ThemeManager.currentMainly());
 		this.initIcon(redirect_button, "settings", "redirect", 24, 24, ThemeManager.currentMainly());

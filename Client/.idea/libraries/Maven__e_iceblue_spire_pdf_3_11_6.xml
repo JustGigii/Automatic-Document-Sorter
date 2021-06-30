@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: e-iceblue:spire.pdf:3.11.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/e-iceblue/spire.pdf/3.11.6/spire.pdf-3.11.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/e-iceblue/spire.pdf/3.11.6/spire.pdf-3.11.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/e-iceblue/spire.pdf/3.11.6/spire.pdf-3.11.6-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

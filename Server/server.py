@@ -293,8 +293,9 @@ def login(connection, username, password):
         snapshot2 = ref.order_by_key().get()
         print(snapshot + " " + snapshot2)
         if snapshot == password:
+            print(snapshot)
             print("login2")
-            if snapshot2 == 'not in a game':
+            if snapshot2 != 'not in a game':
                 print("login3")
                 image_url = db.reference('/users/' + username + '/user_image').order_by_key().get()
                 ref = db.reference('/users/' + username + '/status')

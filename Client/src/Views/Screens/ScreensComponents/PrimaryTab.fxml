@@ -26,6 +26,13 @@
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Text>
+                              <Text fx:id="static_label_312" fill="#535762" layoutX="47.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To move hover and roll" wrappingWidth="160.13671875">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Pane fx:id="static_icon_3_1_b2" layoutX="33.0" layoutY="192.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
+                              <Pane fx:id="static_icon_3_1_b21" layoutX="203.0" layoutY="192.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
                               <ScrollPane fx:id="deleted_scroll_pane" layoutX="32.0" layoutY="255.0" prefHeight="42.0" prefWidth="688.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
          <content>
             <HBox fx:id="deleted_scroll_hbox" maxHeight="24.0" minHeight="24.0" prefHeight="24.0" spacing="3.0" />
@@ -39,14 +46,6 @@
                               <Pane fx:id="url_to_pane" layoutX="60.0" layoutY="27.0" maxWidth="659.0" minWidth="659.0" prefHeight="24.0" prefWidth="659.0" style="-fx-background-color: #4271f4;" />
                               <Pane fx:id="url_from_pane" layoutX="60.0" maxWidth="659.0" minWidth="659.0" prefHeight="24.0" prefWidth="659.0" style="-fx-background-color: #4271f4;" />
       <TextField fx:id="redirect_text_field" layoutX="552.0" layoutY="129.0" maxHeight="24.0" maxWidth="140.0" minHeight="24.0" minWidth="140.0" prefHeight="24.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: #4271f4; -fx-border-width: 3; -fx-text-fill: white; -fx-background-radius: 10 10 10 10; -fx-border-radius: 10 10 10 10;" />
-      <Pane fx:id="static_icon_1_1_a" layoutX="222.0" layoutY="192.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
-      <Pane fx:id="static_icon_1_0" layoutX="34.0" layoutY="192.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
-      <Text fx:id="static_label_1" fill="#535762" layoutX="50.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To move hover and hold" wrappingWidth="167.13671875">
-         <font>
-            <Font name="Arial Bold" size="14.0" />
-         </font>
-      </Text>
-      <Pane fx:id="static_icon_1_1_b" layoutX="222.0" layoutY="192.0" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #535762;" />
                            </children>
                     
 </Pane>

@@ -96,6 +96,7 @@ class ModelTrainig:
                 append_lst = self.NameWithCat(file, name, root)
                 allthesetup.append(append_lst)
             else:
+                print(data_after_subject)
                 append_lst = file.copy()
                 append_lst.append(HebrewNlp.GetName(file[int(Location.wordtoken)],self.allfirstname,self.alllastname))
                 allthesetup.append(append_lst)
@@ -130,7 +131,7 @@ class ModelTrainig:
 
 
 def main():
-    warnings.filterwarnings("ignore")
+    #warnings.filterwarnings("ignore")
     model = ModelTrainig()
     model.LoadTheApi()
     allfile = model.predictAndClasterfy(os.path.join("File\here"))
